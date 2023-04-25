@@ -1,0 +1,13 @@
+<div [ngClass]="isSubmit ? 'slide_to_top' : ''">
+    <img src="../../assets/google-logo-9831.png" alt="google-logo">
+
+    <br>
+    <mat-form-field appearance="outline">
+        <input #Google matInput placeholder="Enter search..." [(ngModel)]="keywords"
+            (keyup.enter)="search(Google.value)">
+    </mat-form-field>
+</div>
+<textarea disabled [ngClass]="isSubmit ? 'fade_in':'none'">
+    {{result}}
+</textarea>
+<mat-spinner [diameter]="70" *ngIf="loading$ | async"></mat-spinner>

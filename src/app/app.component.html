@@ -1,0 +1,5 @@
+<!-- <app-navbar (sendSearchData)="sendData($event)"></app-navbar> -->
+<mat-grid-list cols="1" rowHeight="100%">
+    <!-- <mat-grid-tile><app-google-search [keywords]="keyword" [isSearch]="search"></app-google-search></mat-grid-tile> -->
+    <mat-grid-tile><app-chat-gpt-search [keywords]="keyword" [isSearch]="search"></app-chat-gpt-search></mat-grid-tile>
+</mat-grid-list>

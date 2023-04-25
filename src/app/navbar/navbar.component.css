@@ -1,0 +1,11 @@
+mat-grid-tile {
+    background: #0051ff;
+}
+
+mat-form-field {
+    margin-top: 0.5rem;
+    height: 56px;
+    width: 30rem;
+    background-color: white;
+    border-radius: 5px;
+}

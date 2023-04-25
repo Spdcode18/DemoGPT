@@ -1,0 +1,8 @@
+<mat-grid-list cols="1" rowHeight="80px">
+    <mat-grid-tile>
+        <mat-form-field appearance="outline">
+            <input matInput placeholder="Type to search" [(ngModel)]="searchValue" (keyup)="submit($event)">
+            <mat-icon matSuffix (mouseup)="submit($event)">search</mat-icon>
+        </mat-form-field>
+    </mat-grid-tile>
+</mat-grid-list>

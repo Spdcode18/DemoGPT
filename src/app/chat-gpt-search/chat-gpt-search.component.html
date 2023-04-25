@@ -1,0 +1,12 @@
+<div [ngClass]="isSubmit ? 'slide_to_top' : ''">
+    <img src="../../assets/chat-gpt-logo.png" alt="Chat GPT">
+    <br>
+    <mat-form-field appearance="outline">
+        <input #chatGpt matInput placeholder="Enter search..." [(ngModel)]="keywords"
+            (keyup.enter)="search(chatGpt.value)">
+    </mat-form-field>
+</div>
+<mat-spinner [diameter]="70" *ngIf="loading"></mat-spinner>
+<textarea disabled [ngClass]="isSubmit ? 'fade_in':'none'">
+    {{result}}
+</textarea>
